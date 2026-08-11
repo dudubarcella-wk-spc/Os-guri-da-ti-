@@ -108,9 +108,8 @@ img { max-width: 100%; display: block; }
 }
 .logo { display: flex; align-items: center; gap: 10px; }
 .logo__mark {
-  width: 34px; height: 34px;
-  border-radius: 50%;
-  background: linear-gradient(160deg, var(--blue), var(--blue-dark));
+  width: 46px; height: 46px;
+  object-fit: contain;
   flex-shrink: 0;
 }
 .logo__text {
@@ -153,15 +152,17 @@ img { max-width: 100%; display: block; }
 .hero__stats strong { font-family: var(--font-heading); font-size: 1.4rem; color: var(--blue-dark); }
 .hero__stats span { font-size: 0.8rem; color: var(--text-muted); }
 
-.hero__visual { position: relative; height: 360px; }
-.drop {
-  position: absolute;
-  border-radius: 50% 50% 50% 0;
-  transform: rotate(45deg);
+.hero__visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.drop--lg { width: 220px; height: 220px; background: var(--blue); top: 30px; right: 40px; opacity: 0.95; }
-.drop--md { width: 130px; height: 130px; background: var(--green); bottom: 40px; right: 180px; opacity: 0.9; }
-.drop--sm { width: 80px; height: 80px; background: var(--amber); bottom: 0; right: 0; opacity: 0.9; }
+.hero__visual img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+}
 
 /* Marquee */
 .marquee {
@@ -196,12 +197,18 @@ img { max-width: 100%; display: block; }
 .about__card {
   position: absolute;
   border-radius: var(--radius);
-  background: var(--surface);
+  overflow: hidden;
   border: 1px solid var(--border);
-  box-shadow: 0 12px 32px rgba(31,42,36,0.08);
+  box-shadow: 0 12px 32px rgba(31,42,36,0.12);
 }
-.about__card--1 { width: 68%; height: 78%; top: 0; left: 0; background: var(--blue); }
-.about__card--2 { width: 55%; height: 55%; bottom: 0; right: 0; background: var(--amber); }
+.about__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.about__card--1 { width: 68%; height: 78%; top: 0; left: 0; }
+.about__card--2 { width: 55%; height: 55%; bottom: 0; right: 0; }
 .about__card .badge { position: absolute; bottom: 16px; left: 16px; }
 
 .badge {
