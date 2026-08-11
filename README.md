@@ -57,26 +57,6 @@ python -m http.server
 
 # depois acesse http://localhost:8000
 ```
-
-## Publicação (GitHub Pages)
-
-Este site pode ser publicado gratuitamente pelo GitHub Pages:
-
-1. Vá em **Settings > Pages** no repositório
-2. Em **Branch**, selecione `main` e a pasta `/ (root)`
-3. Clique em **Save**
-4. Após alguns minutos, o link público estará disponível na própria página de configurações
-
-## Configurações pendentes antes de publicar em produção
-
-Antes de divulgar o site oficialmente, ajuste os seguintes dados fictícios usados durante o desenvolvimento:
-
-- [ ] Número de WhatsApp (`index.html` e `script.js`)
-- [ ] E-mail e endereço de contato (`index.html`)
-- [ ] URL e imagem nas tags Open Graph (`og:url`, `og:image`)
-- [ ] Telefone e endereço no schema markup (JSON-LD)
-- [ ] Fotos reais dos produtos e da loja (atualmente o site usa apenas formas visuais)
-
 ## Licença
 
 Projeto de uso interno da Clean POA. Todos os direitos reservados.
