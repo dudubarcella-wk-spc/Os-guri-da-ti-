@@ -3,7 +3,7 @@
 
 Site institucional da **Clean POA**, atacado e varejo de produtos de limpeza e higiene em Porto Alegre e região. O projeto foi criado para aumentar a visibilidade digital da empresa e facilitar o contato com clientes de atacado e varejo.
 
-🔗 **Site no ar:** _adicione aqui o link do GitHub Pages assim que publicar_
+🔗 **Site no ar:** https://dudubarcella-wk-spc.github.io/Os-guri-da-ti-/
 
 ## Sobre o projeto
 
